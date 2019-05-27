@@ -14,6 +14,9 @@
 		7A2850AA229BC6E0009E6B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2850A8229BC6E0009E6B54 /* LaunchScreen.storyboard */; };
 		7A2850B5229BC6E0009E6B54 /* parking_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2850B4229BC6E0009E6B54 /* parking_iosTests.swift */; };
 		7A2850C0229BC6E0009E6B54 /* parking_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2850BF229BC6E0009E6B54 /* parking_iosUITests.swift */; };
+		7A2850CE229BE6DA009E6B54 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2850CD229BE6DA009E6B54 /* LocationManager.swift */; };
+		7A2850CF229BE6DA009E6B54 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2850CD229BE6DA009E6B54 /* LocationManager.swift */; };
+		7A2850D0229BE6DA009E6B54 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2850CD229BE6DA009E6B54 /* LocationManager.swift */; };
 		A2814CC5B0E2566174A15E1A /* Pods_parking_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB224BA2BC94551C037303F2 /* Pods_parking_ios.framework */; };
 		A60DFAC0CE84067BCBE44F4F /* Pods_parking_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DB0D98ED321A00E6C66C6F /* Pods_parking_iosTests.framework */; };
 		AE67AEAC618855FF45BB053C /* Pods_parking_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172C671FA8D696200474EEAC /* Pods_parking_iosUITests.framework */; };
@@ -55,6 +58,7 @@
 		7A2850BB229BC6E0009E6B54 /* parking_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parking_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2850BF229BC6E0009E6B54 /* parking_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parking_iosUITests.swift; sourceTree = "<group>"; };
 		7A2850C1229BC6E0009E6B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A2850CD229BE6DA009E6B54 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		A1B947B232C645A62C92837B /* Pods-parking_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parking_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-parking_ios/Pods-parking_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C5D8AD1A654426961889E195 /* Pods-parking_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parking_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parking_ios/Pods-parking_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		DB224BA2BC94551C037303F2 /* Pods_parking_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parking_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				7A28509F229BC6DF009E6B54 /* AppDelegate.swift */,
+				7A2850CD229BE6DA009E6B54 /* LocationManager.swift */,
 				7A2850A1229BC6DF009E6B54 /* ViewController.swift */,
 				7A2850A3229BC6DF009E6B54 /* Main.storyboard */,
 				7A2850A6229BC6E0009E6B54 /* Assets.xcassets */,
@@ -370,6 +375,7 @@
 			files = (
 				7A2850A2229BC6DF009E6B54 /* ViewController.swift in Sources */,
 				7A2850A0229BC6DF009E6B54 /* AppDelegate.swift in Sources */,
+				7A2850CE229BE6DA009E6B54 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2850CF229BE6DA009E6B54 /* LocationManager.swift in Sources */,
 				7A2850B5229BC6E0009E6B54 /* parking_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2850D0229BE6DA009E6B54 /* LocationManager.swift in Sources */,
 				7A2850C0229BC6E0009E6B54 /* parking_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
