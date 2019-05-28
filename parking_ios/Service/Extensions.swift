@@ -15,3 +15,14 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 }
+
+extension UITableViewCell {
+    
+    class var identifier: String {
+        return String(describing: self)
+    }
+    
+    class var nib: UINib {
+        return UINib(nibName: identifier, bundle: nil)
+    }
+}

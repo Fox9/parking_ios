@@ -13,7 +13,6 @@
         <!--MapVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="MapVC" customModule="parking_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -22,12 +21,23 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bQA-cx-Dz2">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jw5-9A-i1U">
+                                <rect key="frame" x="0.0" y="247" width="414" height="649"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="jw5-9A-i1U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0oT-RV-Hye"/>
+                            <constraint firstItem="jw5-9A-i1U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CJb-fD-Lw1"/>
                             <constraint firstItem="bQA-cx-Dz2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CxK-MG-t3v"/>
+                            <constraint firstAttribute="trailing" secondItem="jw5-9A-i1U" secondAttribute="trailing" id="Gr5-YX-Y34"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bQA-cx-Dz2" secondAttribute="trailing" id="L5H-Oe-voM"/>
                             <constraint firstItem="bQA-cx-Dz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V3L-KE-EgK"/>
+                            <constraint firstAttribute="bottom" secondItem="jw5-9A-i1U" secondAttribute="bottom" id="bAC-2x-RMr"/>
+                            <constraint firstItem="jw5-9A-i1U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fgg-B8-7jc"/>
+                            <constraint firstItem="jw5-9A-i1U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="scL-KP-XUX"/>
+                            <constraint firstAttribute="bottom" secondItem="jw5-9A-i1U" secondAttribute="bottom" id="vFM-oG-EYu"/>
                             <constraint firstAttribute="bottom" secondItem="bQA-cx-Dz2" secondAttribute="bottom" id="zuf-xE-Yx6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -35,8 +45,11 @@
                     <navigationItem key="navigationItem" id="dfQ-N5-rzL"/>
                     <connections>
                         <outlet property="mapView" destination="bQA-cx-Dz2" id="QGE-e6-xa8"/>
+                        <outlet property="parkingTableView" destination="jw5-9A-i1U" id="1NG-Lp-vH1"/>
+                        <outlet property="parkingTableViewTopConstraint" destination="scL-KP-XUX" id="aAN-ER-gxs"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="20.758928571428569"/>
         </scene>
