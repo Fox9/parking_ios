@@ -7,8 +7,13 @@
 //
 
 import Foundation
+import CoreLocation
 
 class Location: Decodable {
     var latitude: Double
     var longitude: Double
-} 
+    
+    func getCLLocationCoordinate2D() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
+    }
+}

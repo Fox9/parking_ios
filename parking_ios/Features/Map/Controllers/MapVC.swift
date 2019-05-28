@@ -56,9 +56,13 @@ class MapVC: BaseVC {
     }
 }
 
+extension MapVC: MKMapViewDelegate {
+    
+}
+
 extension MapVC: LocationManagerDelegate {
     func locationManager(_ class: LocationManager, didChangeLocation location: CLLocation) {
-        
+        WaitingManager.shared.changeLocation(currnetLocation: location.coordinate)
     }
     
     func locationManager(_ manager: LocationManager, didGetCurrent location: CLLocation) {
@@ -68,8 +72,28 @@ extension MapVC: LocationManagerDelegate {
     }
 }
 
-extension MapVC: MKMapViewDelegate {
+extension MapVC: WaitingManagerDelegate {
+    func waitingManager(_ manager: WaitingManager, didEnterTo parking: Parking) {
+        DispatchQueue.main.async {
+            self.showAlert(message: "You entered the parking zone \(parking.name)")
+        }
+    }
     
+    func waitingManager(_ manager: WaitingManager, didStart time: Date) {
+        let format = DateFormatter()
+        format.dateFormat = "HH:MM"
+        DispatchQueue.main.async {
+            self.showAlert(message: "The time began from \(format.string(from: time))")
+        }
+    }
+    
+    func waitingManager(_ manager: WaitingManager, didLeaveFrom parking: Parking, with time: Int) {
+        let hour = time / 60
+        let minutes = time % 60
+        DispatchQueue.main.async {
+            self.showAlert(message: "Your parking time is \(hour) hours and \(minutes) minutes")
+        }
+    }
 }
 
 extension MapVC: UITableViewDelegate {
@@ -142,5 +166,11 @@ extension MapVC: MapVMDelegate {
         
         self.parkingTableView.isHidden = false
         self.parkingTableView.reloadData()
+        
+        WaitingManager.shared.add(parking: parking)
+        WaitingManager.shared.delegate = self
+        if let currentLocation = LocationManager.shared.getCurrentLocation() {
+            WaitingManager.shared.changeLocation(currnetLocation: currentLocation.coordinate)
+        }
     }
 }

@@ -47,6 +47,9 @@
 		7A72C778229D32C6002DBC91 /* ParkingTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */; };
 		7A72C779229D32C6002DBC91 /* ParkingTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */; };
 		7A72C77A229D32C6002DBC91 /* ParkingTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */; };
+		7A72C77E229D4CBD002DBC91 /* WaitingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */; };
+		7A72C77F229D4CBD002DBC91 /* WaitingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */; };
+		7A72C780229D4CBD002DBC91 /* WaitingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */; };
 		A2814CC5B0E2566174A15E1A /* Pods_parking_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB224BA2BC94551C037303F2 /* Pods_parking_ios.framework */; };
 		A60DFAC0CE84067BCBE44F4F /* Pods_parking_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DB0D98ED321A00E6C66C6F /* Pods_parking_iosTests.framework */; };
 		AE67AEAC618855FF45BB053C /* Pods_parking_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172C671FA8D696200474EEAC /* Pods_parking_iosUITests.framework */; };
@@ -99,6 +102,7 @@
 		7A72C75F229D1FE7002DBC91 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7A72C773229D32C6002DBC91 /* ParkingTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTVCell.swift; sourceTree = "<group>"; };
 		7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingTVCell.xib; sourceTree = "<group>"; };
+		7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingManager.swift; sourceTree = "<group>"; };
 		A1B947B232C645A62C92837B /* Pods-parking_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parking_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-parking_ios/Pods-parking_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C5D8AD1A654426961889E195 /* Pods-parking_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parking_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parking_ios/Pods-parking_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		DB224BA2BC94551C037303F2 /* Pods_parking_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parking_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +210,7 @@
 			children = (
 				7A2850CD229BE6DA009E6B54 /* LocationManager.swift */,
 				7A72C75F229D1FE7002DBC91 /* Extensions.swift */,
+				7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -238,10 +243,8 @@
 		7A2850D6229C37A5009E6B54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7A72C757229D199C002DBC91 /* ClusterMarkerAnnotationView.swift */,
-				7A72C75B229D1B11002DBC91 /* ParkingMarkerAnnatationView.swift */,
-				7A72C773229D32C6002DBC91 /* ParkingTVCell.swift */,
-				7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */,
+				7A72C77B229D4C5B002DBC91 /* Markers */,
+				7A72C77C229D4C65002DBC91 /* Parking Cell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +283,24 @@
 				7A72C753229D0FE6002DBC91 /* BaseVC.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		7A72C77B229D4C5B002DBC91 /* Markers */ = {
+			isa = PBXGroup;
+			children = (
+				7A72C757229D199C002DBC91 /* ClusterMarkerAnnotationView.swift */,
+				7A72C75B229D1B11002DBC91 /* ParkingMarkerAnnatationView.swift */,
+			);
+			path = Markers;
+			sourceTree = "<group>";
+		};
+		7A72C77C229D4C65002DBC91 /* Parking Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7A72C773229D32C6002DBC91 /* ParkingTVCell.swift */,
+				7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */,
+			);
+			path = "Parking Cell";
 			sourceTree = "<group>";
 		};
 		FAA6FD28DFB0FEA4C46CBDAA /* Frameworks */ = {
@@ -510,6 +531,7 @@
 				7A72C760229D1FE7002DBC91 /* Extensions.swift in Sources */,
 				7A72C745229D0A76002DBC91 /* Location.swift in Sources */,
 				7A2850A0229BC6DF009E6B54 /* AppDelegate.swift in Sources */,
+				7A72C77E229D4CBD002DBC91 /* WaitingManager.swift in Sources */,
 				7A72C754229D0FE6002DBC91 /* BaseVC.swift in Sources */,
 				7A2850CE229BE6DA009E6B54 /* LocationManager.swift in Sources */,
 			);
@@ -523,6 +545,7 @@
 				7A72C761229D1FE7002DBC91 /* Extensions.swift in Sources */,
 				7A72C755229D0FE6002DBC91 /* BaseVC.swift in Sources */,
 				7A72C776229D32C6002DBC91 /* ParkingTVCell.swift in Sources */,
+				7A72C77F229D4CBD002DBC91 /* WaitingManager.swift in Sources */,
 				7A72C759229D199C002DBC91 /* ClusterMarkerAnnotationView.swift in Sources */,
 				7A2850CF229BE6DA009E6B54 /* LocationManager.swift in Sources */,
 				7A72C742229D087B002DBC91 /* Parking.swift in Sources */,
@@ -540,6 +563,7 @@
 				7A72C762229D1FE7002DBC91 /* Extensions.swift in Sources */,
 				7A72C756229D0FE6002DBC91 /* BaseVC.swift in Sources */,
 				7A72C777229D32C6002DBC91 /* ParkingTVCell.swift in Sources */,
+				7A72C780229D4CBD002DBC91 /* WaitingManager.swift in Sources */,
 				7A72C75A229D199C002DBC91 /* ClusterMarkerAnnotationView.swift in Sources */,
 				7A2850D0229BE6DA009E6B54 /* LocationManager.swift in Sources */,
 				7A72C743229D087B002DBC91 /* Parking.swift in Sources */,
