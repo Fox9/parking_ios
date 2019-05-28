@@ -50,6 +50,9 @@
 		7A72C77E229D4CBD002DBC91 /* WaitingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */; };
 		7A72C77F229D4CBD002DBC91 /* WaitingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */; };
 		7A72C780229D4CBD002DBC91 /* WaitingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */; };
+		7A72C786229D6D39002DBC91 /* UserTestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */; };
+		7A72C787229D6D39002DBC91 /* UserTestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */; };
+		7A72C788229D6D39002DBC91 /* UserTestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */; };
 		A2814CC5B0E2566174A15E1A /* Pods_parking_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB224BA2BC94551C037303F2 /* Pods_parking_ios.framework */; };
 		A60DFAC0CE84067BCBE44F4F /* Pods_parking_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DB0D98ED321A00E6C66C6F /* Pods_parking_iosTests.framework */; };
 		AE67AEAC618855FF45BB053C /* Pods_parking_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172C671FA8D696200474EEAC /* Pods_parking_iosUITests.framework */; };
@@ -103,6 +106,7 @@
 		7A72C773229D32C6002DBC91 /* ParkingTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTVCell.swift; sourceTree = "<group>"; };
 		7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingTVCell.xib; sourceTree = "<group>"; };
 		7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingManager.swift; sourceTree = "<group>"; };
+		7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = UserTestLocation.gpx; sourceTree = "<group>"; };
 		A1B947B232C645A62C92837B /* Pods-parking_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parking_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-parking_ios/Pods-parking_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C5D8AD1A654426961889E195 /* Pods-parking_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parking_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parking_ios/Pods-parking_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		DB224BA2BC94551C037303F2 /* Pods_parking_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parking_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +187,7 @@
 				7A2850A6229BC6E0009E6B54 /* Assets.xcassets */,
 				7A2850A8229BC6E0009E6B54 /* LaunchScreen.storyboard */,
 				7A2850AB229BC6E0009E6B54 /* Info.plist */,
+				7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */,
 			);
 			path = parking_ios;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				7A72C778229D32C6002DBC91 /* ParkingTVCell.xib in Resources */,
 				7A2850AA229BC6E0009E6B54 /* LaunchScreen.storyboard in Resources */,
 				7A2850A7229BC6E0009E6B54 /* Assets.xcassets in Resources */,
+				7A72C786229D6D39002DBC91 /* UserTestLocation.gpx in Resources */,
 				7A72C749229D0D2D002DBC91 /* Parkings.json in Resources */,
 				7A2850A5229BC6DF009E6B54 /* Main.storyboard in Resources */,
 			);
@@ -432,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A72C787229D6D39002DBC91 /* UserTestLocation.gpx in Resources */,
 				7A72C779229D32C6002DBC91 /* ParkingTVCell.xib in Resources */,
 				7A72C74A229D0D2D002DBC91 /* Parkings.json in Resources */,
 			);
@@ -441,6 +448,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A72C788229D6D39002DBC91 /* UserTestLocation.gpx in Resources */,
 				7A72C77A229D32C6002DBC91 /* ParkingTVCell.xib in Resources */,
 				7A72C74B229D0D2D002DBC91 /* Parkings.json in Resources */,
 			);

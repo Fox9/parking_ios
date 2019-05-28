@@ -57,7 +57,12 @@ class MapVC: BaseVC {
 }
 
 extension MapVC: MKMapViewDelegate {
-    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polyRender = MKPolygonRenderer(overlay: overlay)
+        polyRender.strokeColor = UIColor.red
+        polyRender.lineWidth = 4
+        return polyRender
+    }
 }
 
 extension MapVC: LocationManagerDelegate {
@@ -162,6 +167,7 @@ extension MapVC: MapVMDelegate {
     
     func mapVM(_ class: MapVM, didLoad parking: [Parking]) {
         self.mapView.addAnnotations(parking)
+        self.produceOverlay(for: parking)
         self.mapView.reloadInputViews()
         
         self.parkingTableView.isHidden = false
@@ -171,6 +177,14 @@ extension MapVC: MapVMDelegate {
         WaitingManager.shared.delegate = self
         if let currentLocation = LocationManager.shared.getCurrentLocation() {
             WaitingManager.shared.changeLocation(currnetLocation: currentLocation.coordinate)
+        }
+    }
+    
+    private func produceOverlay(for parking: [Parking]) {
+        parking.forEach { parking in
+            let coordinates = parking.locations.map({ $0.getCLLocationCoordinate2D() })
+            let polygon = MKPolygon(coordinates: coordinates, count: coordinates.count)
+            mapView.addOverlay(polygon)
         }
     }
 }

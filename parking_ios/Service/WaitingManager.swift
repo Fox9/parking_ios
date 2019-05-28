@@ -78,7 +78,7 @@ class WaitingManager {
     }
     
     private func startTime() {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 180) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 30) {
             if self.currentParking != nil {
                 self.startDate = Date()
             }
