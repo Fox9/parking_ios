@@ -10,7 +10,8 @@ import Foundation
 import CoreLocation
 
 protocol LocationManagerDelegate: class {
-    func locationManager(_ class: LocationManager, didChangeLocation location: CLLocation)
+    func locationManager(_ manager: LocationManager, didChangeLocation location: CLLocation)
+    func locationManager(_ manager: LocationManager, didGetCurrent location: CLLocation)
 }
 
 class LocationManager: NSObject {
@@ -20,7 +21,7 @@ class LocationManager: NSObject {
     static let shared = LocationManager()
     
     private var locationManager: CLLocationManager
-    private var lastLocation: CLLocation?
+    private var currentLocation: CLLocation?
     
     private override init() {
         self.locationManager = CLLocationManager()
@@ -37,8 +38,8 @@ class LocationManager: NSObject {
         self.startUpdateLocation()
     }
     
-    func getLastLocation() -> CLLocation? {
-        return self.lastLocation
+    func getCurrentLocation() -> CLLocation? {
+        return self.currentLocation
     }
     
     private func startUpdateLocation() {
@@ -54,14 +55,15 @@ extension LocationManager: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if self.lastLocation == nil {
-            self.lastLocation = locations.first
+        if self.currentLocation == nil {
+            self.currentLocation = locations.first
+            self.delegate?.locationManager(self, didGetCurrent: self.currentLocation!)
         } else {
             guard let location = locations.first else { return }
-            let distanceInMeters = self.lastLocation!.distance(from: location)
+            let distanceInMeters = self.currentLocation!.distance(from: location)
             print("Distance - \(distanceInMeters)")
-            if self.lastLocation != location {
-                self.lastLocation = location
+            if self.currentLocation != location {
+                self.currentLocation = location
                 self.delegate?.locationManager(self, didChangeLocation: location)
             }
         }
