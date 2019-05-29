@@ -11,9 +11,11 @@ import MapKit
 
 class MapVC: BaseVC {
     
+    // MARK: - CONSTANTS
     private lazy var MAX_TOP_CONTRAINT = self.view.frame.height * 0.75
     private lazy var MIN_TOP_CONTRAINT = self.view.frame.height * 0.25
     
+    // MARK: - IBOutlet
     @IBOutlet weak var parkingTableView: UITableView! {
         didSet {
             parkingTableView.isHidden = true
@@ -34,6 +36,7 @@ class MapVC: BaseVC {
         }
     }
     
+    // MARK: - Properies
     var viewModel: MapVM? {
         didSet {
             guard let viewModel = viewModel else { return }
@@ -42,6 +45,7 @@ class MapVC: BaseVC {
         }
     }
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Map"
@@ -51,12 +55,14 @@ class MapVC: BaseVC {
         self.viewModel = MapVM()
     }
     
+    // MARK: - IBAction
     @IBAction func showHistory(_ sender: UIBarButtonItem) {
         let vc = UIStoryboard(name: Constants.HISTORY_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "HistoryTVC") as! HistoryTVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
+// MARK: - MKMapView Delegate
 extension MapVC: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let polyRender = MKPolygonRenderer(overlay: overlay)
@@ -65,7 +71,7 @@ extension MapVC: MKMapViewDelegate {
         return polyRender
     }
 }
-
+// MARK: - LocationManager Delegate
 extension MapVC: LocationManagerDelegate {
     func locationManager(_ class: LocationManager, didChangeLocation location: CLLocation) {
         WaitingManager.shared.changeLocation(currnetLocation: location.coordinate)
@@ -78,6 +84,7 @@ extension MapVC: LocationManagerDelegate {
     }
 }
 
+// MARK: - WaitingManager Delegate
 extension MapVC: WaitingManagerDelegate {
     
     func waitingManager(_ manager: WaitingManager, didLeaveFrom parking: Parking, startDate: Date, endDate: Date) {
@@ -103,6 +110,7 @@ extension MapVC: WaitingManagerDelegate {
     }
 }
 
+// MARK: - UITableView Delegate
 extension MapVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -150,6 +158,7 @@ extension MapVC: UITableViewDelegate {
     }
 }
 
+// MARK: - UITableView DataSource
 extension MapVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel?.parking.count ?? 0
@@ -162,6 +171,7 @@ extension MapVC: UITableViewDataSource {
     }
 }
 
+// MARK: - ViewModel Delegate
 extension MapVC: MapVMDelegate {
     func mapVM(_ class: MapVM, didReceiveError message: String) {
         self.showAlert(message: message)
