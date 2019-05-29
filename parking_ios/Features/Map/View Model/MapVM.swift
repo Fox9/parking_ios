@@ -41,4 +41,13 @@ class MapVM {
             }
         }
     }
+    
+    func save(parking: Parking, startDate: Date, endDate: Date) {
+        let history = ParkingHistory()
+        history.id = NSUUID().uuidString
+        history.parking = parking.copy() as! Parking
+        history.startDate = startDate
+        history.endDate = endDate
+        RealmManager.shared.write(history)
+    }
 }

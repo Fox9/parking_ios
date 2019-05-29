@@ -53,6 +53,30 @@
 		7A72C786229D6D39002DBC91 /* UserTestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */; };
 		7A72C787229D6D39002DBC91 /* UserTestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */; };
 		7A72C788229D6D39002DBC91 /* UserTestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */; };
+		7ADC7DEB229E74D600D10359 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DEA229E74D600D10359 /* RealmManager.swift */; };
+		7ADC7DEC229E74D600D10359 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DEA229E74D600D10359 /* RealmManager.swift */; };
+		7ADC7DED229E74D600D10359 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DEA229E74D600D10359 /* RealmManager.swift */; };
+		7ADC7DEF229E751C00D10359 /* ParkingHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DEE229E751C00D10359 /* ParkingHistory.swift */; };
+		7ADC7DF0229E751C00D10359 /* ParkingHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DEE229E751C00D10359 /* ParkingHistory.swift */; };
+		7ADC7DF1229E751C00D10359 /* ParkingHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DEE229E751C00D10359 /* ParkingHistory.swift */; };
+		7ADC7DF7229E7A4400D10359 /* HistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DF6229E7A4400D10359 /* HistoryTVC.swift */; };
+		7ADC7DF8229E7A4400D10359 /* HistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DF6229E7A4400D10359 /* HistoryTVC.swift */; };
+		7ADC7DF9229E7A4400D10359 /* HistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DF6229E7A4400D10359 /* HistoryTVC.swift */; };
+		7ADC7DFB229E7A7F00D10359 /* HistoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DFA229E7A7F00D10359 /* HistoryVM.swift */; };
+		7ADC7DFC229E7A7F00D10359 /* HistoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DFA229E7A7F00D10359 /* HistoryVM.swift */; };
+		7ADC7DFD229E7A7F00D10359 /* HistoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7DFA229E7A7F00D10359 /* HistoryVM.swift */; };
+		7ADC7E05229E7C0800D10359 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC7E04229E7C0800D10359 /* History.storyboard */; };
+		7ADC7E06229E7C0800D10359 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC7E04229E7C0800D10359 /* History.storyboard */; };
+		7ADC7E07229E7C0800D10359 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC7E04229E7C0800D10359 /* History.storyboard */; };
+		7ADC7E0A229E7DD100D10359 /* HistoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7E08229E7DD100D10359 /* HistoryTVCell.swift */; };
+		7ADC7E0B229E7DD100D10359 /* HistoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7E08229E7DD100D10359 /* HistoryTVCell.swift */; };
+		7ADC7E0C229E7DD100D10359 /* HistoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7E08229E7DD100D10359 /* HistoryTVCell.swift */; };
+		7ADC7E0D229E7DD100D10359 /* HistoryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC7E09229E7DD100D10359 /* HistoryTVCell.xib */; };
+		7ADC7E0E229E7DD100D10359 /* HistoryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC7E09229E7DD100D10359 /* HistoryTVCell.xib */; };
+		7ADC7E0F229E7DD100D10359 /* HistoryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC7E09229E7DD100D10359 /* HistoryTVCell.xib */; };
+		7ADC7E11229E94DB00D10359 /* Constatns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7E10229E94DB00D10359 /* Constatns.swift */; };
+		7ADC7E12229E94DB00D10359 /* Constatns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7E10229E94DB00D10359 /* Constatns.swift */; };
+		7ADC7E13229E94DB00D10359 /* Constatns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC7E10229E94DB00D10359 /* Constatns.swift */; };
 		A2814CC5B0E2566174A15E1A /* Pods_parking_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB224BA2BC94551C037303F2 /* Pods_parking_ios.framework */; };
 		A60DFAC0CE84067BCBE44F4F /* Pods_parking_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DB0D98ED321A00E6C66C6F /* Pods_parking_iosTests.framework */; };
 		AE67AEAC618855FF45BB053C /* Pods_parking_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172C671FA8D696200474EEAC /* Pods_parking_iosUITests.framework */; };
@@ -107,6 +131,14 @@
 		7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingTVCell.xib; sourceTree = "<group>"; };
 		7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingManager.swift; sourceTree = "<group>"; };
 		7A72C785229D6D39002DBC91 /* UserTestLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = UserTestLocation.gpx; sourceTree = "<group>"; };
+		7ADC7DEA229E74D600D10359 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		7ADC7DEE229E751C00D10359 /* ParkingHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingHistory.swift; sourceTree = "<group>"; };
+		7ADC7DF6229E7A4400D10359 /* HistoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTVC.swift; sourceTree = "<group>"; };
+		7ADC7DFA229E7A7F00D10359 /* HistoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVM.swift; sourceTree = "<group>"; };
+		7ADC7E04229E7C0800D10359 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		7ADC7E08229E7DD100D10359 /* HistoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTVCell.swift; sourceTree = "<group>"; };
+		7ADC7E09229E7DD100D10359 /* HistoryTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTVCell.xib; sourceTree = "<group>"; };
+		7ADC7E10229E94DB00D10359 /* Constatns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constatns.swift; sourceTree = "<group>"; };
 		A1B947B232C645A62C92837B /* Pods-parking_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parking_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-parking_ios/Pods-parking_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C5D8AD1A654426961889E195 /* Pods-parking_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parking_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parking_ios/Pods-parking_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		DB224BA2BC94551C037303F2 /* Pods_parking_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parking_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,8 +246,10 @@
 			isa = PBXGroup;
 			children = (
 				7A2850CD229BE6DA009E6B54 /* LocationManager.swift */,
-				7A72C75F229D1FE7002DBC91 /* Extensions.swift */,
 				7A72C77D229D4CBD002DBC91 /* WaitingManager.swift */,
+				7A72C75F229D1FE7002DBC91 /* Extensions.swift */,
+				7ADC7DEA229E74D600D10359 /* RealmManager.swift */,
+				7ADC7E10229E94DB00D10359 /* Constatns.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -224,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				7A72C752229D0FD3002DBC91 /* Base */,
+				7ADC7DFF229E7BC800D10359 /* History */,
 				7A72C751229D0FC7002DBC91 /* Map */,
 			);
 			path = Features;
@@ -259,6 +294,7 @@
 			children = (
 				7A72C740229D087B002DBC91 /* Parking.swift */,
 				7A72C744229D0A76002DBC91 /* Location.swift */,
+				7ADC7DEE229E751C00D10359 /* ParkingHistory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +342,50 @@
 				7A72C774229D32C6002DBC91 /* ParkingTVCell.xib */,
 			);
 			path = "Parking Cell";
+			sourceTree = "<group>";
+		};
+		7ADC7DFF229E7BC800D10359 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC7E03229E7BFB00D10359 /* View */,
+				7ADC7E02229E7BEB00D10359 /* Storyboard */,
+				7ADC7E01229E7BE200D10359 /* ViewModel */,
+				7ADC7E00229E7BD200D10359 /* Controllers */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		7ADC7E00229E7BD200D10359 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC7DF6229E7A4400D10359 /* HistoryTVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7ADC7E01229E7BE200D10359 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC7DFA229E7A7F00D10359 /* HistoryVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7ADC7E02229E7BEB00D10359 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC7E04229E7C0800D10359 /* History.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7ADC7E03229E7BFB00D10359 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC7E08229E7DD100D10359 /* HistoryTVCell.swift */,
+				7ADC7E09229E7DD100D10359 /* HistoryTVCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FAA6FD28DFB0FEA4C46CBDAA /* Frameworks */ = {
@@ -428,9 +508,11 @@
 			files = (
 				7A72C778229D32C6002DBC91 /* ParkingTVCell.xib in Resources */,
 				7A2850AA229BC6E0009E6B54 /* LaunchScreen.storyboard in Resources */,
+				7ADC7E05229E7C0800D10359 /* History.storyboard in Resources */,
 				7A2850A7229BC6E0009E6B54 /* Assets.xcassets in Resources */,
 				7A72C786229D6D39002DBC91 /* UserTestLocation.gpx in Resources */,
 				7A72C749229D0D2D002DBC91 /* Parkings.json in Resources */,
+				7ADC7E0D229E7DD100D10359 /* HistoryTVCell.xib in Resources */,
 				7A2850A5229BC6DF009E6B54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +524,8 @@
 				7A72C787229D6D39002DBC91 /* UserTestLocation.gpx in Resources */,
 				7A72C779229D32C6002DBC91 /* ParkingTVCell.xib in Resources */,
 				7A72C74A229D0D2D002DBC91 /* Parkings.json in Resources */,
+				7ADC7E0E229E7DD100D10359 /* HistoryTVCell.xib in Resources */,
+				7ADC7E06229E7C0800D10359 /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +536,8 @@
 				7A72C788229D6D39002DBC91 /* UserTestLocation.gpx in Resources */,
 				7A72C77A229D32C6002DBC91 /* ParkingTVCell.xib in Resources */,
 				7A72C74B229D0D2D002DBC91 /* Parkings.json in Resources */,
+				7ADC7E0F229E7DD100D10359 /* HistoryTVCell.xib in Resources */,
+				7ADC7E07229E7C0800D10359 /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,18 +641,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADC7DEB229E74D600D10359 /* RealmManager.swift in Sources */,
 				7A72C741229D087B002DBC91 /* Parking.swift in Sources */,
+				7ADC7E0A229E7DD100D10359 /* HistoryTVCell.swift in Sources */,
 				7A72C74E229D0D6B002DBC91 /* MapVM.swift in Sources */,
 				7A72C75C229D1B11002DBC91 /* ParkingMarkerAnnatationView.swift in Sources */,
 				7A72C758229D199C002DBC91 /* ClusterMarkerAnnotationView.swift in Sources */,
 				7A72C775229D32C6002DBC91 /* ParkingTVCell.swift in Sources */,
+				7ADC7E11229E94DB00D10359 /* Constatns.swift in Sources */,
 				7A2850A2229BC6DF009E6B54 /* MapVC.swift in Sources */,
 				7A72C760229D1FE7002DBC91 /* Extensions.swift in Sources */,
 				7A72C745229D0A76002DBC91 /* Location.swift in Sources */,
 				7A2850A0229BC6DF009E6B54 /* AppDelegate.swift in Sources */,
+				7ADC7DF7229E7A4400D10359 /* HistoryTVC.swift in Sources */,
 				7A72C77E229D4CBD002DBC91 /* WaitingManager.swift in Sources */,
+				7ADC7DEF229E751C00D10359 /* ParkingHistory.swift in Sources */,
 				7A72C754229D0FE6002DBC91 /* BaseVC.swift in Sources */,
 				7A2850CE229BE6DA009E6B54 /* LocationManager.swift in Sources */,
+				7ADC7DFB229E7A7F00D10359 /* HistoryVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,14 +666,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADC7DF0229E751C00D10359 /* ParkingHistory.swift in Sources */,
 				7A72C74F229D0D6B002DBC91 /* MapVM.swift in Sources */,
 				7A72C761229D1FE7002DBC91 /* Extensions.swift in Sources */,
 				7A72C755229D0FE6002DBC91 /* BaseVC.swift in Sources */,
+				7ADC7DF8229E7A4400D10359 /* HistoryTVC.swift in Sources */,
 				7A72C776229D32C6002DBC91 /* ParkingTVCell.swift in Sources */,
 				7A72C77F229D4CBD002DBC91 /* WaitingManager.swift in Sources */,
+				7ADC7DEC229E74D600D10359 /* RealmManager.swift in Sources */,
 				7A72C759229D199C002DBC91 /* ClusterMarkerAnnotationView.swift in Sources */,
 				7A2850CF229BE6DA009E6B54 /* LocationManager.swift in Sources */,
+				7ADC7E0B229E7DD100D10359 /* HistoryTVCell.swift in Sources */,
+				7ADC7E12229E94DB00D10359 /* Constatns.swift in Sources */,
 				7A72C742229D087B002DBC91 /* Parking.swift in Sources */,
+				7ADC7DFC229E7A7F00D10359 /* HistoryVM.swift in Sources */,
 				7A72C746229D0A76002DBC91 /* Location.swift in Sources */,
 				7A72C75D229D1B11002DBC91 /* ParkingMarkerAnnatationView.swift in Sources */,
 				7A2850B5229BC6E0009E6B54 /* parking_iosTests.swift in Sources */,
@@ -592,14 +690,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADC7DF1229E751C00D10359 /* ParkingHistory.swift in Sources */,
 				7A72C750229D0D6B002DBC91 /* MapVM.swift in Sources */,
 				7A72C762229D1FE7002DBC91 /* Extensions.swift in Sources */,
 				7A72C756229D0FE6002DBC91 /* BaseVC.swift in Sources */,
+				7ADC7DF9229E7A4400D10359 /* HistoryTVC.swift in Sources */,
 				7A72C777229D32C6002DBC91 /* ParkingTVCell.swift in Sources */,
 				7A72C780229D4CBD002DBC91 /* WaitingManager.swift in Sources */,
+				7ADC7DED229E74D600D10359 /* RealmManager.swift in Sources */,
 				7A72C75A229D199C002DBC91 /* ClusterMarkerAnnotationView.swift in Sources */,
 				7A2850D0229BE6DA009E6B54 /* LocationManager.swift in Sources */,
+				7ADC7E0C229E7DD100D10359 /* HistoryTVCell.swift in Sources */,
+				7ADC7E13229E94DB00D10359 /* Constatns.swift in Sources */,
 				7A72C743229D087B002DBC91 /* Parking.swift in Sources */,
+				7ADC7DFD229E7A7F00D10359 /* HistoryVM.swift in Sources */,
 				7A72C747229D0A76002DBC91 /* Location.swift in Sources */,
 				7A72C75E229D1B11002DBC91 /* ParkingMarkerAnnatationView.swift in Sources */,
 				7A2850C0229BC6E0009E6B54 /* parking_iosUITests.swift in Sources */,

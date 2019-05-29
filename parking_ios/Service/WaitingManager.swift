@@ -12,7 +12,7 @@ import MapKit
 protocol WaitingManagerDelegate: class {
     func waitingManager(_ manager: WaitingManager, didEnterTo parking: Parking)
     func waitingManager(_ manager: WaitingManager, didStart time: Date)
-    func waitingManager(_ manager: WaitingManager, didLeaveFrom parking: Parking, with time: Int)
+    func waitingManager(_ manager: WaitingManager, didLeaveFrom parking: Parking, startDate: Date, endDate: Date)
 }
 
 class WaitingManager {
@@ -44,8 +44,7 @@ class WaitingManager {
                 let polygonViewPoint: CGPoint = self.polygonRenderer!.point(for: mapPoint)
                 guard !self.polygonRenderer!.path.contains(polygonViewPoint) else { return }
                 if let startDate = self.startDate {
-                    self.delegate?.waitingManager(self, didLeaveFrom: currentParking,
-                                                  with: Calendar.current.compare(Date(), to: startDate, toGranularity: .second).rawValue)
+                    self.delegate?.waitingManager(self, didLeaveFrom: currentParking, startDate: startDate, endDate: Date())
                 }
                 self.removeCurrentParking()
             } else {
@@ -64,10 +63,10 @@ class WaitingManager {
         for parking in self.parking {
             let polygonRenderer = MKPolygonRenderer(polygon: MKPolygon(coordinates: parking.locations.map({ $0.getCLLocationCoordinate2D() }),
                                                     count: parking.locations.count))
-            let mapPoint: MKMapPoint = MKMapPoint(location)
-            let polygonViewPoint: CGPoint = polygonRenderer.point(for: mapPoint)
+            let point: MKMapPoint = MKMapPoint(location)
+            let polygonPoint: CGPoint = polygonRenderer.point(for: point)
             
-            if polygonRenderer.path.contains(polygonViewPoint) {
+            if polygonRenderer.path.contains(polygonPoint) {
                 self.polygonRenderer = polygonRenderer
                 self.currentParking = parking
                 self.delegate?.waitingManager(self, didEnterTo: parking)

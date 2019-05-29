@@ -1,71 +1,74 @@
 [
-  {
-    "locations": [
-      {
-        "latitude": 42.875375,
-        "longitude":74.618092
-      },
-      {
-        "latitude": 42.875289,
-        "longitude": 74.619813
-      },
-      {
-        "latitude": 42.875183,
-        "longitude": 74.619797
-      },
-      {
-          "latitude": 42.875285,
-          "longitude": 74.618086
-      },
-    ],
-    "name": "Dordoi Plaza 2",
-    "image": "dordoi_plaza",
-    "parkingDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate"
-  },
-  {
-    "locations": [
-      {
-        "latitude": 42.867634,
-        "longitude": 74.613347
-      },
-      {
-        "latitude": 42.867593,
-        "longitude": 74.614078
-      },
-      {
-        "latitude": 42.867247,
-        "longitude": 74.614003
-      },
-      {
-          "latitude": 42.867279,
-          "longitude": 74.613295
-      }
-    ],
-    "name": "Центр семейной медицины №10",
-    "image": "familty_center",
-    "parkingDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate"
-  },
-  {
-    "locations": [
-      {
-        "latitude": 42.829055,
-        "longitude": 74.584472
-      },
-      {
-        "latitude": 42.829062,
-        "longitude": 74.584767
-      },
-      {
-          "latitude": 42.828459,
-          "longitude": 74.584775
-      },
-      {
-          "latitude": 42.828696,
-          "longitude": 74.584542
-      }
-    ],
-    "name": "ТРЦ Ала-Арча",
-    "image": "ala_archa",
-    "parkingDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate"
-  }
+    {
+        "id": 0,
+        "locations": [
+            {
+                "latitude": 42.875375,
+                "longitude":74.618092
+            },
+            {
+                "latitude": 42.875289,
+                "longitude": 74.619813
+            },
+            {
+                "latitude": 42.875183,
+                "longitude": 74.619797
+            },
+            {
+                "latitude": 42.875285,
+                "longitude": 74.618086
+            },
+        ],
+        "name": "Dordoi Plaza 2",
+        "image": "dordoi_plaza",
+        "parkingDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate"
+    },
+    {
+        "id": 1,
+        "locations": [
+            {
+                "latitude": 42.867634,
+                "longitude": 74.613347
+            },
+            {
+                "latitude": 42.867593,
+                "longitude": 74.614078
+            },
+            {
+                "latitude": 42.867247,
+                "longitude": 74.614003
+            },
+            {
+                "latitude": 42.867279,
+                "longitude": 74.613295
+            }
+        ],
+        "name": "Центр семейной медицины №10",
+        "image": "familty_center",
+        "parkingDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate"
+    },
+    {
+        "id": 2,
+        "locations": [
+            {
+                "latitude": 42.829055,
+                "longitude": 74.584472
+            },
+            {
+                "latitude": 42.829062,
+                "longitude": 74.584767
+            },
+            {
+                "latitude": 42.828459,
+                "longitude": 74.584775
+            },
+            {
+                "latitude": 42.828696,
+                "longitude": 74.584542
+            }
+        ],
+        "name": "ТРЦ Ала-Арча",
+        "image": "ala_archa",
+        "parkingDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate"
+    }
 ]

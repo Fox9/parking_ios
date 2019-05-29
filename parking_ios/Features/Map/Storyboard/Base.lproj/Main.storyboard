@@ -42,7 +42,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dfQ-N5-rzL"/>
+                    <navigationItem key="navigationItem" id="dfQ-N5-rzL">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="fFj-JR-jbD">
+                            <connections>
+                                <action selector="showHistory:" destination="BYZ-38-t0r" id="ixr-4p-5BV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="bQA-cx-Dz2" id="QGE-e6-xa8"/>
                         <outlet property="parkingTableView" destination="jw5-9A-i1U" id="1NG-Lp-vH1"/>

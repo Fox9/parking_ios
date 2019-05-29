@@ -14,10 +14,6 @@ class MapVC: BaseVC {
     private lazy var MAX_TOP_CONTRAINT = self.view.frame.height * 0.75
     private lazy var MIN_TOP_CONTRAINT = self.view.frame.height * 0.25
     
-    override var isNavigationBarHidden: Bool {
-        return true
-    }
-    
     @IBOutlet weak var parkingTableView: UITableView! {
         didSet {
             parkingTableView.isHidden = true
@@ -48,11 +44,16 @@ class MapVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Map"
         LocationManager.shared.delegate = self
         LocationManager.shared.start()
         
         self.viewModel = MapVM()
+    }
+    
+    @IBAction func showHistory(_ sender: UIBarButtonItem) {
+        let vc = UIStoryboard(name: Constants.HISTORY_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "HistoryTVC") as! HistoryTVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -78,6 +79,15 @@ extension MapVC: LocationManagerDelegate {
 }
 
 extension MapVC: WaitingManagerDelegate {
+    
+    func waitingManager(_ manager: WaitingManager, didLeaveFrom parking: Parking, startDate: Date, endDate: Date) {
+        DispatchQueue.main.async {
+            self.viewModel!.save(parking: parking, startDate: startDate, endDate: endDate)
+            let seconds = Int(endDate.timeIntervalSince1970 - startDate.timeIntervalSince1970)
+            self.showAlert(message: "Your parking time is \(seconds / 60) minutes and \(seconds % 60) seconds")
+        }
+    }
+    
     func waitingManager(_ manager: WaitingManager, didEnterTo parking: Parking) {
         DispatchQueue.main.async {
             self.showAlert(message: "You entered the parking zone \(parking.name)")
@@ -86,17 +96,9 @@ extension MapVC: WaitingManagerDelegate {
     
     func waitingManager(_ manager: WaitingManager, didStart time: Date) {
         let format = DateFormatter()
-        format.dateFormat = "HH:MM"
+        format.dateFormat = "HH:mm"
         DispatchQueue.main.async {
             self.showAlert(message: "The time began from \(format.string(from: time))")
-        }
-    }
-    
-    func waitingManager(_ manager: WaitingManager, didLeaveFrom parking: Parking, with time: Int) {
-        let hour = time / 60
-        let minutes = time % 60
-        DispatchQueue.main.async {
-            self.showAlert(message: "Your parking time is \(hour) hours and \(minutes) minutes")
         }
     }
 }

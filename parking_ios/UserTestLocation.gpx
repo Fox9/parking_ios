@@ -16,7 +16,7 @@
          
          Waypoints must be sorted by time in ascending order.
          -->
-        <time>2019-05-28T19:27:37Z</time>
+        <time>2019-05-28T19:38:37Z</time>
     </wpt>
     <wpt lat="42.828969" lon="74.585168">
         <name>Raydom</name>
@@ -28,7 +28,7 @@
          
          Waypoints must be sorted by time in ascending order.
          -->
-        <time>2019-05-28T19:30:37Z</time>
+        <time>2019-05-28T19:40:37Z</time>
     </wpt>
     <wpt lat="42.875285" lon="74.618086">
         <name>Cupertino</name>
@@ -40,7 +40,7 @@
          
          Waypoints must be sorted by time in ascending order.
          -->
-        <time>2019-05-28T19:31:35Z</time>
+        <time>2019-05-28T19:42:35Z</time>
     </wpt>
     <wpt lat="42.874428" lon="74.617439">
         <name>Cupertino</name>
@@ -52,7 +52,7 @@
          
          Waypoints must be sorted by time in ascending order.
          -->
-        <time>2019-05-28T19:33:37Z</time>
+        <time>2019-05-28T19:56:37Z</time>
     </wpt>
     
 </gpx>
